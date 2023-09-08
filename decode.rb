@@ -9,6 +9,7 @@ def decode_char(char)
   }
   code_morse[char]
 end
+
 def decode_word(word)
   word = word.split
   decoded_word = ''
@@ -17,6 +18,7 @@ def decode_word(word)
   end
   decoded_word
 end
+
 def decode(sentence)
   decoded_sentence = ''
   sentence = sentence.split('   ')
@@ -25,13 +27,5 @@ def decode(sentence)
   end
   puts decoded_sentence.strip
 end
+
 decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
-
-
-
-
-
-
-
-
-
